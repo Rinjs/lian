@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700&display=swap');
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?e5w53f');
-  src:  url('fonts/icomoon.eot?e5w53f#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.svg?e5w53f#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?e5w53f');
+  src:  url('../fonts/icomoon.eot?e5w53f#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?e5w53f') format('truetype'),
+    url('../fonts/icomoon.woff?e5w53f') format('woff'),
+    url('../fonts/icomoon.svg?e5w53f#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,58 +34,72 @@ a {
 	font-size: 14px;
 	letter-spacing: 1px;
 }
+a:hover {
+	color: black;
+}
+a:focus {
+	font-size: 15px;
+}
 p {
 	color: #9c9c9c;
 	font-family: 'Roboto', sans-serif;
 }
 /*Header*/
-header img {
+.header__logo {
 	padding: 27px 0;
 }
-header {
+.header {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 	height: 90px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
-	box-shadow: 1px 6px 4px -4px lightgrey;
+	box-shadow: 1px 6px 4px -6px grey;
+	background-color: white;
 }
-.head_menu {
+.header__menu {
 	float: right;
 }
-.head_menu li:last-child {
+.header__menu li:last-child {
 	font-family: 'icomoon';
 	padding-right: 15px;
 }
-.head_menu  li{
+.header__menu  li{
 	padding: 37px 23px 0 20px;
 }
 /*Main*/
-main {
+.main {
 	background-color: #fafafa;
+	padding-top: 90px;
 	position: relative;
 }
 /*Footer*/
-footer {
-	position: absolute;
-	bottom: 0;
+.footer {
 	width: 100%;
 	height: 300px;
-	box-shadow: 1px -6px 4px -4px lightgrey;
+	box-shadow: 1px -6px 4px -0px grey;
+	background-color: white;
 }
-footer img {
+.footer__logo {
 	display: block;
-	margin: 64px auto 44px auto;
+	margin: 0 auto;
+	padding: 64px 0 44px 0;
 }
-.footer_menu ul {
+.footer__menu {
 	display: flex;
 	justify-content: center;
 	font-family: 'icomoon';
-	border-top: 2px solid #ebebeb;
-	border-bottom: 2px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 }
-.footer_menu li {
+.footer__menu li {
 	padding: 23px 28px;
 }
-footer p {
+.footer__menu li:hover {
+	border-top: 1px solid black;
+}
+.footer__copyright {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 13px;
