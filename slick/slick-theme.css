@@ -181,14 +181,14 @@
 {
     font-family: 'slick';
     font-size: 7px;
-    line-height: 20px;
+    line-height: 16px;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 
     content: '•';
     text-align: center;
