@@ -68,6 +68,18 @@ p {
 .header__menu  li{
 	padding: 37px 23px 0 20px;
 }
+.header__menu a {
+	position: relative;
+}
+.header__menu a:hover::before {
+	content: " ";
+	position: absolute;
+	border: 1px solid black;
+	width: 20px;
+	left: -33px;
+	top: 50%;
+	transform: translateY(-50%);
+}
 /*Main*/
 .main {
 	background-color: #fafafa;
