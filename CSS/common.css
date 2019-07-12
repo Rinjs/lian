@@ -143,10 +143,11 @@ p {
 	background-color: transparent;
 }
 .photo:active {
+	transition: .5s;
 	transform: scale(1.5, 1.5);
 	z-index: 100;
 }
-more {
+.more {
 	display: block;
 	margin: 27px auto 0 auto;
 	border: none;
