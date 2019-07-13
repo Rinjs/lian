@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+.main__heading img {
+	width: 100%;
+	position: relative;
+}
+.heading__text {
+	text-align: left;
+	left: auto;
+	transform: translate(0,-50%);
+}

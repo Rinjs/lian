@@ -81,6 +81,29 @@ p {
 	transform: translateY(-50%);
 }
 /*Main*/
+.heading__text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Roboto', sans-serif; 
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	text-align: center;
+	font-weight: lighter;
+}
+.heading__text h1 {
+	font-weight: lighter;
+	padding: 0 40px;
+	color: white;
+	font-size: 48px;
+	background-color: black;
+	margin-bottom: 30px;
+}
+.heading__text p {
+	color: black;
+	font-size: 18px;
+}
 .main {
 	background-color: #fafafa;
 	padding: 90px 0 75px 0;
