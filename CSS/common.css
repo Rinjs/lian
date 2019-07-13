@@ -10,6 +10,22 @@
   font-weight: normal;
   font-style: normal;
 }
+.centred_y {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.centred_x {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.centred_xy {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -82,10 +98,6 @@ p {
 }
 /*Main*/
 .heading__text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	font-family: 'Roboto', sans-serif; 
 	text-transform: uppercase;
 	letter-spacing: 7px;
