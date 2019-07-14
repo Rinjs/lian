@@ -1,21 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-/*Head*/
-.main__heading img {
-	width: 100%;
-}
-.main__heading {
-	position: relative;
-}
-.heading__text {
-	text-align: left;
-	left: auto;
-	transform: translate(0,-50%);
-}
 /*Main content*/
 .about {
-	margin: 70px 0 98px 0;
-	font-family: 'Roboto', sans-serif; 
+	margin-bottom: 98px;
 } 
 .about img {
 	float: left;

@@ -58,7 +58,6 @@ a:focus {
 }
 p {
 	color: #9c9c9c;
-	font-family: 'Roboto', sans-serif;
 }
 /*Header*/
 .header__logo {
@@ -98,7 +97,6 @@ p {
 }
 /*Main*/
 .heading__text {
-	font-family: 'Roboto', sans-serif; 
 	text-transform: uppercase;
 	letter-spacing: 7px;
 	text-align: center;
@@ -200,6 +198,19 @@ button.more:hover {
 button.more:active { 
 	background: linear-gradient(#b3aeae, #959595) #b3aeae; 
 }
+/*heading*/
+.main__heading img {
+	width: 100%;
+}
+.main__heading {
+	position: relative;
+	margin-bottom: 70px;
+}
+.main__heading .heading__text {
+	text-align: left;
+	left: auto;
+	transform: translate(0,-50%);
+}
 /*Footer*/
 .footer {
 	width: 100%;
@@ -224,6 +235,7 @@ button.more:active {
 	padding-top: 22px;
 }
 .footer__copyright {
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 13px;
