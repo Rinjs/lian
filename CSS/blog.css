@@ -65,10 +65,34 @@
 .post__social a:first-child {
 	margin-right: 25px;
 }
+.image {
+	position: relative;
+}
+.image .post__content {
+	display: none;
+}
+.image:hover .post__content {
+	display: block;
+	position: absolute;
+	top: 0;
+}
+.image:hover::before {
+	content: ' ';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: black;
+	opacity: .85;
+}
+.more {
+	bottom: -65px;
+}
 
 .main__body {
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 65px;
 }
 
 .slidebar {
