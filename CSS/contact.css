@@ -60,14 +60,16 @@
 	color: #bababa;
 	font-style: italic;
 	margin-bottom: 30px;
-	position: relative;
 }
 .contact__forms input:first-child {
 	margin-right: 30px;
 }
-.contact__forms input::before {
-	content: ' ';
-	position: absolute;
+.contact__forms input:hover,
+.contact__forms textarea:hover { 
+	border: 1px solid #a3a2a2;
+}
+.contact__forms input:focus,
+.contact__forms textarea:focus {
 	border-left: 3px solid #afafaf;
 }
 .contact__forms textarea {
@@ -96,4 +98,42 @@
 	background-color: white;
 	color: black;
 	border: 1px solid black;
+}
+.map {
+	margin: 80px 0 65px 0;
+}
+
+.values__head h1,
+.values__item h2 {
+	letter-spacing: 7px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.values__head p,
+.values__item p {
+	color: #777777;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.values__head h1 {
+	text-align: center;
+	font-size: 30px;
+    margin-bottom: 35px;
+}
+.values__head p {
+	text-align: center;
+    max-width: 615px;
+    margin: 0 auto 60px auto;
+}
+.values__item h2 {
+	font-size: 18px;
+	margin: 20px 0 35px 0;
+}
+.values__list {
+	display: flex;
+	justify-content: space-between;
+}
+.values__item {
+	width: 354px;
 }
