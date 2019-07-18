@@ -25,6 +25,7 @@
 	border-bottom: 1px solid black;
 }
 
+/*contact info*/
 .contact__info {
 	font-size: 15px;
 	color: #777777;
@@ -43,79 +44,11 @@
 .address {
 	margin-bottom: 25px;
 }
-
-.contact__forms textarea,
-.contact__forms button {
-	display: block;
-}
-.contact__forms input,
-.contact__forms textarea {
-	border: 1px solid #ebebeb;
-	outline: none;
-	width: 345px;
-	height: 40px;
-	background-color: white;
-	padding-left: 15px;
-	font-size: 14px;
-	color: #bababa;
-	font-style: italic;
-	margin-bottom: 30px;
-}
-.contact__forms input:first-child {
-	margin-right: 30px;
-}
-.contact__forms input:hover,
-.contact__forms textarea:hover { 
-	border: 1px solid #a3a2a2;
-}
-.contact__forms input:focus,
-.contact__forms textarea:focus {
-	border-left: 3px solid #afafaf;
-}
-.contact__forms textarea {
-	height: 140px;
-	width: 740px;
-	padding-top: 10px;
-	resize: none;
-}
-.contact__forms button {
-	text-transform: uppercase;
-	background-color: black;
-	color: white;
-	font-weight: bold;
-	font-size: 14px;
-	border: none;
-	border-radius: 2px;
-	width: 220px;
-	height: 40px;
-	transition: .5s;
-	outline: none;
-}
-.contact__forms button:hover {
-	opacity: 0.5;
-}
-.contact__forms button:active {
-	background-color: white;
-	color: black;
-	border: 1px solid black;
-}
 .map {
 	margin: 80px 0 65px 0;
 }
 
-.values__head h1,
-.values__item h2 {
-	letter-spacing: 7px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-.values__head p,
-.values__item p {
-	color: #777777;
-    line-height: 30px;
-    font-size: 14px;
-    font-weight: 400;
-}
+/*Our values*/
 .values__head h1 {
 	text-align: center;
 	font-size: 30px;
