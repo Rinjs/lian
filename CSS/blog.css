@@ -26,6 +26,9 @@
 
 .post__title {
 	font-size: 20px;
+	color: black;
+	text-transform: none;
+	letter-spacing: 0;
 	margin: 30px 0 20px 0;
 }
 .post__writer {
@@ -54,6 +57,7 @@
 	content: "\f007";
 }
 
+/*social block*/
 .post__social {
 	float: right;
 }
@@ -65,6 +69,8 @@
 .post__social a:first-child {
 	margin-right: 25px;
 }
+
+/*image block*/
 .image {
 	position: relative;
 }
@@ -76,6 +82,18 @@
 	position: absolute;
 	top: 0;
 }
+.image:hover .post__info,
+.image:hover .post__writer {
+	color: #e5e5e5;
+}
+.image:hover .post__title {
+	color: white;
+}
+.post__title:hover,
+.image .post__title:hover {
+	color: lightgrey;
+	text-shadow: 1px 1px 3px black;
+}
 .image:hover::before {
 	content: ' ';
 	position: absolute;
@@ -85,6 +103,8 @@
 	background-color: black;
 	opacity: .85;
 }
+
+/*buuton*/
 .more {
 	bottom: -65px;
 }
@@ -98,6 +118,8 @@
 .slidebar {
 	max-width: 365px;
 }
+
+/*search field*/
 .search {
 	position: relative;
 	margin-bottom: 25px;
@@ -153,6 +175,7 @@
 	border-top: 10px solid #ebebeb;
 }
 
+/*recent posts*/
 .recent-post {
 	padding-top: 25px;
 }
@@ -181,6 +204,7 @@
 	background-color: white;
 }
 
+/*tags*/
 .tag {
 	display: inline-block;
 	font-size: 13px;
