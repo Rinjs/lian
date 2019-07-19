@@ -287,7 +287,7 @@ button.more:active {
 	font-style: italic;
 	margin-bottom: 30px;
 }
-.contact__forms input:first-child {
+.name input {
 	margin-right: 30px;
 }
 .contact__forms input:focus,
@@ -295,12 +295,14 @@ button.more:active {
 	border: 1px solid #a3a2a2;
 }
 .email,
-.name {
+.name,
+.website {
 	display: inline-block;
 }
 .email:hover::before,
 .name:hover::before,
-.message:hover::before {
+.message:hover::before,
+.website:hover::before {
 	content: ' ';
 	height: 42px;
 	width: 3px;
