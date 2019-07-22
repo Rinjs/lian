@@ -3,6 +3,6 @@ $(window).on('load', function () {
         itemSelector: '.post',
         transitionDuration: '0.8s',
         horizontalOrder: true,
-        gutter: 30
+        columnWidth: '.post__sizer'
     });
 });

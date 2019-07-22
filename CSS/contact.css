@@ -68,5 +68,48 @@
 	justify-content: space-between;
 }
 .values__item {
-	width: 354px;
+	max-width: 354px;
+}
+
+/*adapt*/
+@media screen and (max-width: 1150px) {
+	.container {
+		max-width: 1120px;
+		padding: 0 20px;	
+	}
+	.contact {
+    	flex-direction: column;
+	}
+	.values__list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.email, .name {
+    	display: block;
+	}
+	.contact__forms input {
+		width: calc(100% - 15px);
+		margin-right: 0;
+	}
+	.contact__forms button {
+		margin:  0 auto;
+	}
+	.contact__head {
+		text-align: center;
+	}
+	.contact__head::after {
+		width: 100%;
+		left: 0;
+	}
+	.contact__info {
+		margin-bottom: 20px;
+	}
+	.values__item {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.values__item img {
+		width: 100%;
+	}
 }

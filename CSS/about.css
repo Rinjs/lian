@@ -1,17 +1,17 @@
 /*Main content*/
 .about {
-	margin-bottom: 98px;
+	margin-bottom: 100px;
 } 
 .about img {
 	float: left;
-	margin-right: 53px;
+	margin-right: 50px;
 }
 .descr {
 	margin-bottom: 30px;
 }
 .story__head {
 	font-size: 18px;
-	margin-bottom: 39px;
+	margin-bottom: 40px;
 	line-height: 1em;
 }
 
@@ -22,9 +22,10 @@
 }
 .skills__field {
 	position: relative;
-	float: left;
+	display: inline-block;
 	padding-left: 3px;
-	width: 549px;
+	width: 100%;
+	max-width: 550px;
 	height: 10px;
 	background-color: #ebebeb;
 	margin-bottom: 20px;
@@ -49,13 +50,13 @@
 }
 .skills__info {
 	position: absolute;
-	right: -33px;
+	right: -35px;
 	top: -40px;
 	background-color: black;
 	color: white;
 	font-size: 12px;
 	width: 40px;
-	height: 21px;
+	height: 20px;
 	text-align: center;
 	font-family: 'Lato', sans-serif; 
 }
@@ -138,8 +139,8 @@
 }
 .worker {
 	display: inline-block;
-	margin-right: 29px;
-	width: 358px;
+	margin-right: 25px;
+	max-width: 360px;
 }
 .worker:last-child {
 	margin-right: 0;
@@ -163,4 +164,48 @@
 	line-height: 24px;
 	margin-bottom: 0;
 	color: #9c9c9c;
+}
+
+
+/*adapt*/
+@media screen and (max-width: 1175px) {
+	.story {
+		text-align: center;
+	}
+	.story__head {
+		text-align: center;
+		margin: 20px 0;
+	}
+	.about img {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.skills__field {
+		max-width: 100%;
+	}
+	.about {
+		margin-bottom: 40px;
+	}
+	.container {
+		max-width: 1120px;
+		padding: 0 20px;
+	}
+	.worker img {
+		width: 100%;
+	}
+	.worker {
+		display: block;
+		margin: 0 auto 20px auto;
+	}
+	.worker:last-child {
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 500px) {
+	.skills__info {
+		right: -25px;
+		width: 30px;
+	}
 }

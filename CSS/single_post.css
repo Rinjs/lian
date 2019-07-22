@@ -66,9 +66,33 @@
 .website input {
 	margin-right: 0px;
 }
-.comment textarea {
-	width: 810px;
-}
 .comment button {
 	margin: 0 auto;
+}
+
+/*adapt*/
+@media screen  and (max-width: 1050px) {
+	.post__heading img {
+		width: 100%;
+	}
+	.post {
+		padding: 0 20px;	
+	}
+}
+@media screen  and (max-width: 900px) {
+	.email, .name, .website {
+    	display: block;
+	}
+	.comment input {
+		width: calc(100% - 15px);
+		margin-right: 0;
+	}
+}
+@media screen  and (max-width: 650px) {
+	.post__heading h1 {
+		font-size: 20px;
+	}
+	.info p {
+		font-size: 12px;
+	}
 }
