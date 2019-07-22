@@ -433,11 +433,17 @@ button.more:active {
 		justify-content: center;
 	}
 
+	/*gellary*/
 	.gallery__photos {
 		margin: 0 25%;
 	}
 	.photo  img {
 		width: 100%;
+	}
+
+	/*footer*/
+	.footer__logo {
+		padding: 45px 0 25px 0;
 	}
 }
 @media screen and (max-width: 600px) {
