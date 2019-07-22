@@ -123,7 +123,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 56px;
+    bottom: 55px;
 
     display: block;
 
@@ -200,4 +200,43 @@
     background-color: black;
     border-radius: 50%;
     color: white;
+}
+
+/*adapt slider*/
+@media screen and (max-width: 800px) {
+    .slick-prev {
+        left: 30px;
+    }
+    .slick-next {
+        right: 30px;
+    }
+    .slick-dots { 
+        bottom: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .slick-prev::before,
+    .slick-next::before { 
+    font-size: 30px;  
+    }
+    .slick-prev,
+    .slick-next {
+        width: 30px;
+        height: 30px;
+    }
+    .slick-prev {
+        left: 25px;
+    }
+    .slick-next {
+        right: 25px;
+    }
+    .slick-dots { 
+        bottom: 5px;
+    }
+    .slick-dots li button::before {
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+        font-size: 4px;
+    }
 }

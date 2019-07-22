@@ -2,7 +2,7 @@ $(window).on('load', function () {
 	$('.gallery__photos').masonry({
         itemSelector: '.photo',
         transitionDuration: '0.8s',
-        gutter: 30
+        columnWidth: '.gallery__sizer'
     });
 });
 var masonryUpdate = function() {
