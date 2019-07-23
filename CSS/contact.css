@@ -63,6 +63,16 @@
 	font-size: 18px;
 	margin: 20px 0 35px 0;
 }
+.values__item a {
+	color: black;
+}
+.values__item a:hover {
+	color: #777;
+}
+.values__item img:hover {
+	transform: scale(1.2);
+	transition: 1s;
+}
 .values__list {
 	display: flex;
 	justify-content: space-between;
@@ -87,11 +97,11 @@
 	.email, .name {
     	display: block;
 	}
-	.contact__forms input {
+	.forms input {
 		width: calc(100% - 15px);
 		margin-right: 0;
 	}
-	.contact__forms button {
+	.forms button {
 		margin:  0 auto;
 	}
 	.contact__head {

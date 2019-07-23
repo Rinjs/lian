@@ -29,10 +29,12 @@
 
 .post__title {
 	font-size: 20px;
+	margin: 30px 0 20px 0;
+}
+.title__link {
 	color: black;
 	text-transform: none;
 	letter-spacing: 0;
-	margin: 30px 0 20px 0;
 }
 .post__writer {
 	color: #cccccc;
@@ -92,7 +94,7 @@
 .image:hover .post__title {
 	color: white;
 }
-.post__title:hover,
+.title__link:hover,
 .image .post__title:hover {
 	color: lightgrey;
 }
@@ -214,6 +216,7 @@
 	padding: 10px 15px;
 	border-radius: 2px;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 .tag:hover {
 	background-color: black;

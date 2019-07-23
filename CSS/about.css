@@ -142,6 +142,9 @@
 	margin-right: 25px;
 	max-width: 360px;
 }
+.worker:hover {
+	box-shadow: 0px 1px 6px lightgrey;
+}
 .worker:last-child {
 	margin-right: 0;
 }
@@ -149,13 +152,13 @@
 	background-color: white;
 	padding: 30px 35px;
 }
-.name {
+.worker__name {
 	font-size: 24px;
 	font-weight: 300;
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
-.job {
+.worker__job {
 	font-weight: 500;
 	color: #777777;
 	margin-bottom: 20px;
@@ -164,6 +167,9 @@
 	line-height: 24px;
 	margin-bottom: 0;
 	color: #9c9c9c;
+}
+.worker img {
+	width: 100%;
 }
 
 
@@ -191,9 +197,6 @@
 	.container {
 		max-width: 1120px;
 		padding: 0 20px;
-	}
-	.worker img {
-		width: 100%;
 	}
 	.worker {
 		display: block;

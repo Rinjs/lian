@@ -82,9 +82,25 @@ p {
 .header__menu {
 	float: right;
 }
-.header__menu li:last-child {
+.header__menu li:last-child a {
 	font-family: 'icomoon';
 	padding-right: 15px;
+	position: absolute;
+	right: 10px;
+}
+.header__menu li:last-child {
+	padding: 5px 20px 5px 20px;
+	position: relative;
+}
+.header__menu .header__search input {
+	margin-bottom: 0;
+	width: 0px; 
+	border: none;
+	transition: width .3s;
+}
+.header__menu li:last-child:hover input {
+	width: 250px;
+	border: 1px solid #ebebeb;
 }
 .header__menu  li{
 	padding: 35px 20px 0 20px;
@@ -202,6 +218,7 @@ p {
 	padding: 10px 25px;
 	border-radius: 1px;
 	outline: none;
+	cursor: pointer;
 }
 button.more:hover { 
 	background: linear-gradient(#959595, #b3aeae) #959595; 
@@ -243,6 +260,7 @@ button.more:active {
 .footer__menu li {
 	padding: 25px 30px;
 	position: relative;
+	cursor: pointer;
 }
 .footer__menu li:hover a{
 	color: black;
@@ -268,17 +286,22 @@ button.more:active {
 	font-size: 13px;
 	margin: 35px 0 45px 0;
 }
-.black {
+.black  a {
 	color: black;
+	font-size: 13px;
+}
+.black  a:hover {
+	color: grey;
+	border-bottom: 1px solid black;
 }
 
 /*forms*/
-.contact__forms textarea,
-.contact__forms button {
+.forms textarea,
+.forms button {
 	display: block;
 }
-.contact__forms input,
-.contact__forms textarea {
+.forms input,
+.forms textarea {
 	border: 1px solid #ebebeb;
 	outline: none;
 	width: 345px;
@@ -294,8 +317,8 @@ button.more:active {
 .name input {
 	margin-right: 30px;
 }
-.contact__forms input:focus,
-.contact__forms textarea:focus { 
+.forms input:focus,
+.forms textarea:focus { 
 	border: 1px solid #a3a2a2;
 }
 .email,
@@ -306,7 +329,8 @@ button.more:active {
 .email:hover::before,
 .name:hover::before,
 .message:hover::before,
-.website:hover::before {
+.website:hover::before,
+.header__search:hover::before {
 	content: ' ';
 	height: 42px;
 	width: 3px;
@@ -316,13 +340,13 @@ button.more:active {
 .message:hover::before {
 	height: 152px;
 }
-.contact__forms textarea {
+.forms textarea {
 	height: 140px;
 	width: calc(100% - 15px);
 	padding-top: 10px;
 	resize: none;
 }
-.contact__forms button {
+.forms button {
 	text-transform: uppercase;
 	background-color: black;
 	color: white;
@@ -335,10 +359,10 @@ button.more:active {
 	transition: .5s;
 	outline: none;
 }
-.contact__forms button:hover {
+.forms button:hover {
 	opacity: 0.5;
 }
-.contact__forms button:active {
+.forms button:active {
 	background-color: white;
 	color: black;
 	border: 1px solid black;
@@ -435,6 +459,23 @@ button.more:active {
 		float: none;
 		display: flex;
 		justify-content: center;
+	}
+	.header__menu a:hover::after {
+		content: " ";
+		position: absolute;
+		border: 1px solid black;
+		width: 20px;
+		right: -33px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.header__menu li:last-child a {
+		left: 50%;
+		transform: translateX(-50%);
+		top: 30%;
+	}
+	.header__menu li:last-child:hover a {
+		display: none;
 	}
 
 	/*gellary*/
