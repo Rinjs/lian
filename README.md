@@ -1,3 +1,3 @@
 # lian
 web page
-https://rinjs.github.io/lian/index.html
+https://vladislavkorenik.github.io/lian/index.html
